@@ -12,17 +12,34 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="1.css">
     <title>Хмара</title>
+    <style>
+      .more_btn {
+            width: 100%;
+            border: none;
+            background: #ffb703;
+            padding: 14px;
+            border-radius: 10px;
+            font-weight: 700;
+            margin-top: 15px;
+            cursor: pointer;
+            text-align: center;
+            
+      }
+      .more_btn:hover {
+          background: #e6a800;
+      }
+    </style>
 </head>
 <body>
   <header class="header_site">
     <div class="logo">
         <img src="img/cloud.svg" alt="cloud_logo">
-        <a href="index.html"><p>Хмара</p></a>
+        <a href="1.html"><p>Хмара</p></a>
     </div>
     <div>
         <ul>
             <li>
-                <a href="tour.html">Тури</a>
+                <a href="tour.html" class="fw-800">Тури</a>
             </li>
             <li>
                 <a href="advice.html">Блог</a>
@@ -34,7 +51,7 @@
                 <a href="sale.html">Акції</a>
             </li>
             <li>
-                <a href="about_us.html" class="fw-800">Про нас</a>
+                <a href="about_us.html">Про нас</a>
             </li>
         </ul>
     </div>
@@ -47,66 +64,140 @@
     </div>
 </header>
 <section>
-    <div class="merg about_text mb-0">
-      <div class="d-flex flex-column">
-        <p class="Ubuntu fz-36 fw-500 mb-3">Хмара - доступний відпочинок для всієї родини</p>
-        <p class="Nunito fz-20 mb-4">Турагенство "Хмара" виникло на тлі власного бажання Вікторії Бруньки допомогти іншим відкривати прекрасний світ подорожей. Засноване в 2005 році, це турагенство швидко завоювало визнання завдяки своєму унікальному підходу до відпочинку та інноваційним послугам</p>
-        <p class="Nunito fz-20 mb-4">Вікторія об'єднала свою багаторічну експертизу у туристичній галузі з власними подорожами, створюючи неперевершений мікс ентузіазму та професіоналізму. Починаючи як малий підприємець, вона здатна була передбачити та задовольнити потреби ринку, зробивши "Хмару" популярною серед різноманітних категорій мандрівників.</p>
-        <p class="Nunito fz-20 mb-4">Спеціалізація агенції у наданні нестандартних та ексклюзивних маршрутів, таких як фуд-тури, еко-подорожі та віртуальні тури, стала відзначеною особливістю. Вікторія завжди прагнула впроваджувати нові ідеї та технології у сфері туризму, щоб забезпечити клієнтам незабутні враження.</p>
+    <div class="merg tour_title" style="justify-content: center;">
+      <h1 class="Ubuntu fz-36 fw-700 text-center mt-3">
+        Тури в Франції
+      </h1>
+    </div>
+</section>
+<section class="hots">
+  <div class="cards_tour merg">
+    <div class="card_tour mb-2">
+      <div class="hotel_tour">
+        <img src="img/hotel8.jpg" alt="hotel1" width="300" height="200">
       </div>
-      <div>
-        <img src="img/b.png" alt="info">
-        <div class="director_text mt-2">
-          <img src="img/info.svg" alt="owner">
-          <p class="Nunito fz-14 gray">Вікторія Брунько</p>
+      <div class="info_card">
+        <div>
+          <p class="Ubuntu fz-24 fw-500 mb-0">Paris Elegance ★★★★★</p>
+          <p class="Ubuntu fz-16 fw-500 mb-2">Франція, Париж</p>
+          <div class="d-flex row">
+            <div class="Nunito fz-16 linia align-middle">
+              <p class="gray">Виліт:</p>
+              <p>15.05.2026 з Києва</p>
+            </div>
+            <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>5</div>
+            <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Deluxe City View</div>
+            <div class="Nunito fz-16 linia"><p class="gray">Все включено</p>Так</div>
+          </div>
+        </div>
+      </div>
+      <div class="price" style="gap: 10%;">
+        <div class="merg p-0 mb-0 row mt-0">
+          <p class="Nunito fz-36 fw-500 yellow text-end">$1500</p>
+          <p class="Nunito fz-20 text-end">за одного</p>
+        </div>
+        <div class="p-0 mt-3 mb-0">
+          <div>
+            <div class="Nunito fz-16 linia left">
+              <p class="gray">Залишилося:</p>
+              <p>10 місць</p>
+            </div>
+            <div>
+              <a href="hotel.html"><p class="more_btn">Детальніше</p></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="merg mt-0">
-      <p class="Nunito fz-20">Протягом років "Хмара" успішно розвивалася, встановлюючи високі стандарти обслуговування та створюючи довіру в клієнтському середовищі. Засноване на принципах індивідуального підходу до кожного клієнта та турістичного інноваційного мислення, турагенство "Хмара" залишається провідним у світі туристичних послуг, і надалі прагне відкривати нові горизонти подорожей для всіх любителів відкриттів та пригод.</p>
-    </div>
-</section>
-<section class="merg flex-column">
-  <div>
-    <p class="Ubuntu fz-36 fw-500">Історія відкриття нових можливостей </p>
   </div>
-  <div>
-    <div class="year mt-5 mb-3">
-      <img src="img/2008.svg" alt="2008">
-      <p class="Nunito fz-20">У 2008 році "Хмара" вперше впровадила концепцію фуд-турів, де туристи мали можливість насолоджуватися місцевою кухнею та культурою. </p>
-    </div>
-    <div class="year mb-3">
-      <img src="img/2012.svg" alt="2012">
-      <p class="Nunito fz-20">У 2012 році "Хмара" впровадила послугу еко-туризму, акцентуючи увагу на збереженні навколишнього середовища та взаємодії з місцевими спільнотами.</p>
-    </div>
-    <div class="year mb-3">
-      <img src="img/2015.svg" alt="2015">
-      <p class="Nunito fz-20">У 2015 році "Хмара" розширила свою географію та почала пропонувати тури в екзотичні країни Південної Америки та Африки. </p>
-    </div>
-    <div class="year mb-3">
-      <img src="img/2018.svg" alt="2018">
-      <p class="Nunito fz-20">У 2018 році "Хмара" запускає тур "Слідами Арктичних Дослідників", в якому учасники вирушають на північ та вивчають красу та  природні явища арктичного регіону.</p>
-    </div>
-    <div class="year">
-      <img src="img/2021.svg" alt="2021">
-      <p class="Nunito fz-20">У 2021 році "Хмара" розробляє тур "Острівна Одіссея", який охоплює найчарівніші та найвіддаленіші острови у всіх океанах.</p>
-    </div>
-  </div>
-  <div class="mt-5">
-    <p class="Nunito fz-20 fw-300 text-center">Історія "Хмара" – це пригода, яка розвивалася разом з її засновницею та відданим колективом. Кожен рік приносив нові виклики і перемоги, роблячи турагенцію справжнім лідером у світі туризму.</p>
-  </div>
-</section>
-<section>
-  <div class="d-flex flex-column align-items-center">
-    <p class="Ubuntu fz-36 fw-500 mb-5  align-items-center">Наші партнери</p>
-  </div>
-    <div class="partners merg mt-0 mb-5">
-      <img src="img/marriott.png" alt="marriott">
-      <img src="img/turkish.png" alt="turkish">
-      <img src="img/hilton.png" alt="hilton">
-      <img src="img/achilles.png" alt="achilles">
-    </div>
 
+  <div class="cards_tour merg">
+    <div class="card_tour mb-2">
+      <div class="hotel_tour">
+        <img src="img/hotel10.jpg" alt="hotel2" width="300" height="200">
+      </div>
+      <div class="info_card">
+        <div>
+          <p class="Ubuntu fz-24 fw-500 mb-0">Nice Beach Resort ★★★★</p>
+          <p class="Ubuntu fz-16 fw-500 mb-2">Франція, Ніцца</p>
+          <div class="d-flex row">
+            <div class="Nunito fz-16 linia align-middle">
+              <p class="gray">Виліт:</p>
+              <p>20.06.2026 з Львова</p>
+            </div>
+            <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>7</div>
+            <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Sea View Suite</div>
+            <div class="Nunito fz-16 linia"><p class="gray">Все включено</p>Так</div>
+          </div>
+        </div>
+      </div>
+      <div class="price" style="gap: 10%;">
+        <div class="merg p-0 mb-0 row mt-0">
+          <p class="Nunito fz-36 fw-500 yellow text-end">$1800</p>
+          <p class="Nunito fz-20 text-end">за одного</p>
+        </div>
+        <div class="p-0 mt-3 mb-0">
+          <div>
+            <div class="Nunito fz-16 linia left">
+              <p class="gray">Залишилося:</p>
+              <p>8 місць</p>
+            </div>
+            <div>
+              <a href="hotel.html"><p class="more_btn">Детальніше</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards_tour merg">
+    <div class="card_tour mb-2">
+      <div class="hotel_tour">
+        <img src="img/hotel3.jpg" alt="hotel3" width="300" height="200">
+      </div>
+      <div class="info_card">
+        <div>
+          <p class="Ubuntu fz-24 fw-500 mb-0">Lyon Cultural Stay ★★★★</p>
+          <p class="Ubuntu fz-16 fw-500 mb-2">Франція, Ліон</p>
+          <div class="d-flex row">
+            <div class="Nunito fz-16 linia align-middle">
+              <p class="gray">Виліт:</p>
+              <p>05.07.2026 з Одеси</p>
+            </div>
+            <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>6</div>
+            <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Classic Double</div>
+            <div class="Nunito fz-16 linia"><p class="gray">Все включено</p>Ні</div>
+          </div>
+        </div>
+      </div>
+      <div class="price" style="gap: 10%;">
+        <div class="merg p-0 mb-0 row mt-0">
+          <p class="Nunito fz-36 fw-500 yellow text-end">$1300</p>
+          <p class="Nunito fz-20 text-end">за одного</p>
+        </div>
+        <div class="p-0 mt-3 mb-0">
+          <div>
+            <div class="Nunito fz-16 linia left">
+              <p class="gray">Залишилося:</p>
+              <p>12 місць</p>
+            </div>
+            <div>
+              <a href="hotel.html"><p class="more_btn">Детальніше</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="merg align-middle justify-content-center mt-0 ">
+    <button class="btn_more"><a href="#"><p class="Nunito fz-20 ">Дивитися більше</p></a></button>
+  </div>
 </section>
 <footer class="merg_1">
   <div class="footer_logo">
@@ -146,13 +237,13 @@
       <p class="Ubuntu fz-16 fw-500">Посилання</p>
       <ul class="footer_link">
           <li>
-              <a href="tour.html"><p class="Nunito fz-16">Тури</p></a>
+              <a href="tour.html"><p class="Nunito fz-16 fw-800">Тури</p></a>
           </li>
           <li>
               <a href="advice.html"><p  class="Nunito fz-16">Блог</p></a>
           </li>
           <li>
-              <a href="about_us.html"><p  class="Nunito fz-16 fw-800">Про нас</p></a>
+              <a href="about_us.html"><p  class="Nunito fz-16">Про нас</p></a>
           </li>
       </ul>
   </div>

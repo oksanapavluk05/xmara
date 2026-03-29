@@ -2,6 +2,8 @@ body{
     font-family: Ubuntu;
     font-weight: 500;
     font-size: 20px;
+    margin: 0;
+
 }
 footer{
     width: 100%;
@@ -67,13 +69,19 @@ line-height: normal;
 .fw-800{
     font-weight: 800;
 }
+.hotel_tour img {
+    width: 300px;     
+    height: 200px;  
+    object-fit: cover; 
+    border-radius: 5px;
+}
 .merg{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 11%;
     align-items: center;
-    margin: 4% 0 2% 0;
+    margin: 0% 0 2% 0;
     width: auto;
 }
 .merg_1{
@@ -125,7 +133,7 @@ ul{
     flex-direction: row;
     padding: 0;
     margin: 0;
-    gap: 100px;
+    gap: 75px;
 }
 li{
     display: flex;
@@ -178,7 +186,7 @@ header{
     align-items: center;
     text-align: center;
     background: var(--blue, #C1E8FF);
-    width: 100%;
+    width: auto;
     height: 70px;
     flex-shrink: 0;
     position: relative;
@@ -652,10 +660,15 @@ flex-direction: column;
 }
 .date{
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     gap: 0.25%;    
     padding: 0%;
     gap: 5%;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    padding-bottom: 15px;
 }
 .bg_white{
     background-color: white;
@@ -762,4 +775,403 @@ height: 100%;
 }
 .rect_white input{
     margin: 0;
+}
+
+/* TOUR INFO CARDS */
+
+.tour-cards {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.tour-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.tour-card:hover {
+    transform: translateY(-4px);
+}
+
+.tour-card .label {
+    font-size: 14px;
+    color: #8a8a8a;
+    margin-bottom: 6px;
+}
+
+.tour-card .value {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.tour-card .sub {
+    font-size: 13px;
+    color: #666;
+}
+
+/* акцент на ціні */
+.tour-card.price {
+    border: 2px solid #FFD43B;
+    background: #fffdf2;
+}
+
+.review-place {
+    color: #FFC701;
+    font-size: 14px;
+}
+/* ===== FIX REVIEWS PAGE ===== */
+
+.hero {
+    height: 350px;
+    background: url('img/mountains.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.35);
+    top: 0;
+    left: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #eee;
+}
+
+/* REVIEWS GRID */
+.reviews {
+    background: #f1f1f1;
+    padding: 60px 11%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.review-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+/* HEADER INSIDE CARD */
+.review-card h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.review-card .place {
+    color: #FFC701;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* AVATAR */
+.avatar {
+    width: 45px;
+    height: 45px;
+    background: #6ec1e4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* STARS */
+.stars {
+    color: #FFC701;
+    margin: 8px 0;
+}
+
+/* TEXT */
+.review-card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ===== IMAGE SIZE FIX (як ти просив 549x250) ===== */
+.review-card img {
+    width: 549px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .reviews {
+        grid-template-columns: 1fr;
+        padding: 40px 5%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}/* BOOKING FIX */
+
+.booking {
+    padding: 60px 11%;
+    background: #f5f8fa;
+    display: flex;
+    justify-content: center;
+}
+
+.booking-form {
+    background: #e6eef2;
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* РЯД */
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* КОЖНЕ ПОЛЕ */
+.input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* LABEL */
+.input p {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* INPUT + SELECT */
+.input input,
+.input select,
+textarea {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccd6dd;
+    font-size: 14px;
+    transition: 0.2s;
+    margin: 0; /* ВАЖЛИВО — прибирає твої старі відступи */
+}
+
+/* FOCUS */
+.input input:focus,
+.input select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #7fbcd2;
+    box-shadow: 0 0 0 2px rgba(127,188,210,0.2);
+}
+
+/* TEXTAREA */
+textarea {
+    margin-top: 10px;
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* BUTTON */
+.submit-btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px;
+    background: #FFC701;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #FFC701;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+.included-box {
+    background: #cfe8f3;
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.included-box h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.included-box ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-left: 20px;
+}
+
+.included-box li {
+    font-size: 15px;
+    list-style-type: disc;
+}
+.after-submit {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+.included-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.included-box li {
+    position: relative;
+    padding-left: 28px;
+    font-size: 15px;
+}
+
+.included-box li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #2bb673;
+    font-weight: bold;
+}
+.tour-image {
+    width: 100%;
+    border-radius: 16px;
+    margin: 30px 0; 
+}
+
+.tour-block {
+    background: #fff;
+    padding: 30px; 
+    border-radius: 16px;
+    margin-bottom: 35px;
+    line-height: 1.6; 
+}
+
+.price-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+.price-box:hover {
+    transform: translateY(-5px);
+}
+.price-box p {
+    margin: 6px 0;
+}
+.price-box .price {
+    font-size: 38px;
+    color: #ffb703;
+}
+
+.accordion-header {
+    background: #f0f4f8;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.accordion-header:hover {
+    background: #e0ebf5;
+}
+.accordion-content {
+    display: none;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.accordion-content img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.accordion-content p {
+    grid-column: 1 / -1;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 900px) {
+    .accordion-content {
+        grid-template-columns: 1fr; 
+    }
+    .tour-layout {
+        flex-direction: column;
+    }
+    .tour-sidebar {
+        position: static;
+        margin-top: 30px;
+    }
+}
+.country_btn {
+    width: 100%;
+    background-color: #C1E8FF; 
+    color: white;
+    border: none;
+    padding: 12px 5px;
+    border-radius: 8px; 
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.country_btn:hover {
+    background-color: #C1E8FF;
 }

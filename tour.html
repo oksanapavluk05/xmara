@@ -12,6 +12,23 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="1.css">
     <title>Хмара</title>
+    <style>
+      .more_btn {
+            width: 100%;
+            border: none;
+            background: #ffb703;
+            padding: 14px;
+            border-radius: 10px;
+            font-weight: 700;
+            margin-top: 15px;
+            cursor: pointer;
+            text-align: center;
+            
+      }
+      .more_btn:hover {
+          background: #e6a800;
+      }
+    </style>
 </head>
 <body>
   <header class="header_site">
@@ -26,6 +43,12 @@
             </li>
             <li>
                 <a href="advice.html">Блог</a>
+            </li>
+            <li>
+                <a href="reviews.html">Відгуки</a>
+            </li>
+            <li>
+                <a href="sale.html">Акції</a>
             </li>
             <li>
                 <a href="about_us.html">Про нас</a>
@@ -55,213 +78,273 @@
     </div>
   </div>
 </section>
+<section>
+  <div class="merg mt-4 mb-2">
+    <h2 class="Ubuntu fz-24 fw-700 text-center">
+      Оберіть країну для подорожі
+    </h2>
+  </div>
+<div class="country_filter merg mt-3">
+  <div class="row g-2">
+    <div class="col"><button class="country_btn"><a href="tour_france.html">Франція</a></button></div>
+    <div class="col"><button class="country_btn"><a href="tour_france.html">Італія</a></button></div>
+    <div class="col"><button class="country_btn"><a href="tour_france.html">Японія</a></button></div>
+    <div class="col"><button class="country_btn"><a href="tour_france.html">Португалія</a></button></div>
+    <div class="col"><button class="country_btn"><a href="tour_france.html">Німечина</a></button></div>
+    <div class="col"><button class="country_btn"><a href="tour_france.html">Британія</a></button></div>
+    <div class="col"><button class="country_btn"><a href="tour_france.html">США</a></button></div>
+    <div class="col"><button class="country_btn"><a href="tour_france.html">Україна</a></button></div>
+    <div class="col"><button class="country_btn"><a href="tour_france.html">Польща</a></button></div>
+    <div class="col"><button class="country_btn"><a href="tour_france.html">Сербія</a></button></div>
+    <div class="col"><button class="country_btn"><a href="tour_france.html">Тайланд</a></button></div>
+  </div>
+</div>
+</section>
 <section class="hots">
   <div class="cards_tour merg">
-      <div class="card_tour mb-2">
-          <div class="hotel_tour">
-              <img src="img/h1.jpg" alt="hotel1" width="300" height="200">
-          </div>
-          <div class="info_card">
-              <div>
-                  <p class="Ubuntu fz-24 fw-500 mb-0">Sunset Retreat ★★★★</p>
-                  <p class="Ubuntu fz-16 fw-500 mb-2">Італія, Рим</p>
-                  <div class="d-flex row">
-                  <div class="Nunito fz-16 linia align-middle">
-                    <p class="gray">Виліт:</p>
-                    <p>02.01.2023 з Кракова</p>
-                  </div>
-                  
-                    <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>7</div>
-                    <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Suite Deluxe Ocean View</div>
-                    <div class="Nunito fz-16 linia"><p class="gray">Все включено</p>Так</div>  
-                  </div>
-                  </div>
-              <div class="price">
-                <div class="merg p-0 mb-0 row mt-0">
-                  <p class="Nunito fz-36 fw-500 yellow text-end">$1200</p>
-                  <p class="Nunito fz-20 text-end">за одного</p>
-                </div>
-                <div class="merg p-0 mt-3 mb-0">
-                <div class="Nunito fz-16 linia left">
-                  <p class="gray">Залишилося:</p>
-                  <p>15 місць</p>
-                </div>
-              </div>
-              </div>
-              
-          </div>
-      </div>
-      <div class="card_tour mb-2">
-        <div class="hotel_tour">
-            <img src="img/h2.jpg" alt="hotel2" width="300" height="200">
-        </div>
-        <div class="info_card">
-            <div>
-                <p class="Ubuntu fz-24 fw-500 mb-0">Safari Adventure ★★★★★</p>
-                <p class="Ubuntu fz-16 fw-500 mb-2">Греція, Санторіні</p>
-                <div class="d-flex row">
-                <div class="Nunito fz-16 linia align-middle">
-                  <p class="gray">Виліт:</p>
-                  <p>05.01.2023 з Риму</p>
-                </div>
-                
-                  <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>14</div>
-                  <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Presidential Penthouse Suite</div>
-                  <div class="Nunito fz-16 linia"><p class="gray">Все включено</p>Так</div>  
-                </div>
-                </div>
-            <div class="price">
-              <div class="merg p-0 mb-0 row mt-0">
-                <p class="Nunito fz-36 fw-500 yellow text-end">$3200</p>
-                <p class="Nunito fz-20 text-end">за одного</p>
-              </div>
-              <div class="merg p-0 mt-3 mb-0">
-              <div class="Nunito fz-16 linia left">
-                <p class="gray">Залишилося:</p>
-                <p>22 місць</p>
-              </div>
-            </div>
-            </div>
-            
-        </div>
-    </div>
     <div class="card_tour mb-2">
       <div class="hotel_tour">
-          <img src="img/h4.jpg" alt="hotel3" width="300" height="200">
+        <img src="img/h1.jpg" alt="hotel1" width="300" height="200">
       </div>
       <div class="info_card">
-          <div>
-              <p class="Ubuntu fz-24 fw-500 mb-0">Asian Delights ★★★★</p>
-              <p class="Ubuntu fz-16 fw-500 mb-2">Тайланд, Бангкок</p>
-              <div class="d-flex row">
+        <div>
+          <p class="Ubuntu fz-24 fw-500 mb-0">Sunset Retreat ★★★★</p>
+          <p class="Ubuntu fz-16 fw-500 mb-2">Італія, Рим</p>
+            <div class="d-flex row">
               <div class="Nunito fz-16 linia align-middle">
                 <p class="gray">Виліт:</p>
-                <p>14.01.2023 з Кракова</p>
+                <p>02.01.2023 з Кракова</p>
               </div>
-              
-                <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>7</div>
-                <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Standard Courtyard View Room</div>
-                <div class="Nunito fz-16 linia"><p class="gray">Все включено</p>Так</div>  
-              </div>
-              </div>
-          <div class="price">
-            <div class="merg p-0 mb-0 row mt-0">
-              <p class="Nunito fz-36 fw-500 yellow text-end">$1800</p>
-              <p class="Nunito fz-20 text-end">за одного</p>
+              <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>7</div>
+              <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Suite Deluxe Ocean View</div>
+              <div class="Nunito fz-16 linia"><p class="gray">Все включено</p>Так</div>  
             </div>
-            <div class="merg p-0 mt-3 mb-0">
+        </div>
+      </div>
+      <div class="price" style="gap: 10%;">
+        <div class="merg p-0 mb-0 row mt-0">
+          <p class="Nunito fz-36 fw-500 yellow text-end">$1200</p>
+          <p class="Nunito fz-20 text-end">за одного</p>
+        </div>
+        <div class="p-0 mt-3 mb-0">
+          <div>
             <div class="Nunito fz-16 linia left">
               <p class="gray">Залишилося:</p>
-              <p>2 місць</p>
+              <p>15 місць</p>
+            </div>
+            <div>
+              <a href="tour_info.html"><p class="more_btn">Детальніше</p></a>
             </div>
           </div>
-          </div>
-          
+        </div>
       </div>
-  </div>
-  <div class="card_tour mb-2">
-    <div class="hotel_tour ">
-        <img src="img/h5.jpg" alt="hotel4" width="300" height="200">
     </div>
-    <div class="info_card">
+  </div>
+  
+  <div class="cards_tour merg">
+    <div class="card_tour mb-2">
+      <div class="hotel_tour">
+        <img src="img/hotel7.jpg" alt="hotel1" width="300" height="200">
+      </div>
+      <div class="info_card">
         <div>
-            <p class="Ubuntu fz-24 fw-500 mb-0">Amazon Rainforest Expedition ★★★</p>
-            <p class="Ubuntu fz-16 fw-500 mb-2">Бразилія, Мануал</p>
+          <p class="Ubuntu fz-24 fw-500 mb-0">Ocean Paradise ★★★★</p>
+          <p class="Ubuntu fz-16 fw-500 mb-2">Мальдіви, Мале</p>
             <div class="d-flex row">
-            <div class="Nunito fz-16 linia align-middle">
-              <p class="gray">Виліт:</p>
-              <p>25.01.2023 з Праги</p>
+              <div class="Nunito fz-16 linia align-middle">
+                <p class="gray">Виліт:</p>
+                <p>02.08.2026 з Варшава</p>
+              </div>
+              <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>7</div>
+              <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Water Villa</div>
+              <div class="Nunito fz-16 linia"><p class="gray">Все включено</p>Так</div>  
             </div>
-            
-              <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>8</div>
-              <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Family Connecting Rooms</div>
+        </div>
+      </div>
+      <div class="price" style="gap: 10%;">
+        <div class="merg p-0 mb-0 row mt-0">
+          <p class="Nunito fz-36 fw-500 yellow text-end">$12200</p>
+          <p class="Nunito fz-20 text-end">за одного</p>
+        </div>
+        <div class="p-0 mt-3 mb-0">
+          <div>
+            <div class="Nunito fz-16 linia left">
+              <p class="gray">Залишилося:</p>
+              <p>9 місць</p>
+            </div>
+            <div>
+              <a href="tour_info.html"><p class="more_btn">Детальніше</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cards_tour merg">
+    <div class="card_tour mb-2">
+      <div class="hotel_tour">
+        <img src="img/hotel6.jpg" alt="hotel1" width="300" height="200">
+      </div>
+      <div class="info_card">
+        <div>
+          <p class="Ubuntu fz-24 fw-500 mb-0">Sakura Blossom ★★★</p>
+          <p class="Ubuntu fz-16 fw-500 mb-2">Японія, Токіо</p>
+            <div class="d-flex row">
+              <div class="Nunito fz-16 linia align-middle">
+                <p class="gray">Виліт:</p>
+                <p>05.04.2026 з Берліна</p>
+              </div>
+              <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>7</div>
+              <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Standard Room</div>
               <div class="Nunito fz-16 linia"><p class="gray">Все включено</p>Ні</div>  
             </div>
+        </div>
+      </div>
+      <div class="price" style="gap: 10%;">
+        <div class="merg p-0 mb-0 row mt-0">
+          <p class="Nunito fz-36 fw-500 yellow text-end">$3500</p>
+          <p class="Nunito fz-20 text-end">за одного</p>
+        </div>
+        <div class="p-0 mt-3 mb-0">
+          <div>
+            <div class="Nunito fz-16 linia left">
+              <p class="gray">Залишилося:</p>
+              <p>30 місць</p>
             </div>
-        <div class="price">
-          <div class="merg p-0 mb-0 row mt-0">
-            <p class="Nunito fz-36 fw-500 yellow text-end">$2300</p>
-            <p class="Nunito fz-20 text-end">за одного</p>
-          </div>
-          <div class="merg p-0 mt-3 mb-0">
-          <div class="Nunito fz-16 linia left">
-            <p class="gray">Залишилося:</p>
-            <p>35 місць</p>
+            <div>
+              <a href="tour_info.html"><p class="more_btn">Детальніше</p></a>
+            </div>
           </div>
         </div>
-        </div>
-        
+      </div>
     </div>
-</div>
-<div class="card_tour mb-2">
-  <div class="hotel_tour">
-      <img src="img/h6.jpg" alt="hotel5" width="300" height="200">
   </div>
-  <div class="info_card">
-      <div>
-          <p class="Ubuntu fz-24 fw-500 mb-0">New York City Lights ★★★★</p>
-          <p class="Ubuntu fz-16 fw-500 mb-2">США, Нью Йорк</p>
-          <div class="d-flex row">
-          <div class="Nunito fz-16 linia align-middle">
-            <p class="gray">Виліт:</p>
-            <p>25.01.2023 з Відня</p>
-          </div>
-          
-            <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>4</div>
-            <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Suite Super Deluxe View</div>
-            <div class="Nunito fz-16 linia"><p class="gray">Все включено</p>Ні</div>  
-          </div>
-          </div>
-      <div class="price">
+
+  <div class="cards_tour merg">
+    <div class="card_tour mb-2">
+      <div class="hotel_tour">
+        <img src="img/hotel3.jpg" alt="hotel1" width="300" height="200">
+      </div>
+      <div class="info_card">
+        <div>
+          <p class="Ubuntu fz-24 fw-500 mb-0">Golden Sands ★★★★</p>
+          <p class="Ubuntu fz-16 fw-500 mb-2">Єгипет, Хургада</p>
+            <div class="d-flex row">
+              <div class="Nunito fz-16 linia align-middle">
+                <p class="gray">Виліт:</p>
+                <p>31.04.2026 з Відня</p>
+              </div>
+              <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>7</div>
+              <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Superior Room Sea View</div>
+              <div class="Nunito fz-16 linia"><p class="gray">Все включено</p>Так</div>  
+            </div>
+        </div>
+      </div>
+      <div class="price" style="gap: 10%;">
         <div class="merg p-0 mb-0 row mt-0">
-          <p class="Nunito fz-36 fw-500 yellow text-end">$2000</p>
+          <p class="Nunito fz-36 fw-500 yellow text-end">$10700</p>
           <p class="Nunito fz-20 text-end">за одного</p>
         </div>
-        <div class="merg p-0 mt-3 mb-0">
-        <div class="Nunito fz-16 linia left">
-          <p class="gray">Залишилося:</p>
-          <p>3 місць</p>
+        <div class="p-0 mt-3 mb-0">
+          <div>
+            <div class="Nunito fz-16 linia left">
+              <p class="gray">Залишилося:</p>
+              <p>5 місць</p>
+            </div>
+            <div>
+              <a href="tour_info.html"><p class="more_btn">Детальніше</p></a>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="cards_tour merg">
+    <div class="card_tour mb-2">
+      <div class="hotel_tour">
+        <img src="img/hotel4.jpg" alt="hotel1" width="300" height="200">
       </div>
-      
-  </div>
-</div>
-<div class="card_tour mb-2">
-  <div class="hotel_tour">
-      <img src="img/h3.jpg" alt="hotel6" width="300" height="200">
-  </div>
-  <div class="info_card">
-      <div>
-          <p class="Ubuntu fz-24 fw-500 mb-0">Caribbean Cruise Paradise ★★★★</p>
-          <p class="Ubuntu fz-16 fw-500 mb-2">США, Маямі</p>
-          <div class="d-flex row">
-          <div class="Nunito fz-16 linia align-middle">
-            <p class="gray">Виліт:</p>
-            <p>2.02.2023 з Катовіце</p>
-          </div>
-          
-            <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>7</div>
-            <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Romantic Beachfront Bungalow</div>
-            <div class="Nunito fz-16 linia"><p class="gray">Все включено</p>Так</div>  
-          </div>
-          </div>
-      <div class="price">
+      <div class="info_card">
+        <div>
+          <p class="Ubuntu fz-24 fw-500 mb-0">Emerald City Stay ★★★</p>
+          <p class="Ubuntu fz-16 fw-500 mb-2">США, Сієтл</p>
+            <div class="d-flex row">
+              <div class="Nunito fz-16 linia align-middle">
+                <p class="gray">Виліт:</p>
+                <p>02.05.2026 з Кракова</p>
+              </div>
+              <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>6</div>
+              <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Queen Room</div>
+              <div class="Nunito fz-16 linia"><p class="gray">Все включено</p>Ні</div>  
+            </div>
+        </div>
+      </div>
+      <div class="price" style="gap: 10%;">
         <div class="merg p-0 mb-0 row mt-0">
-          <p class="Nunito fz-36 fw-500 yellow text-end">$2200</p>
+          <p class="Nunito fz-36 fw-500 yellow text-end">$5500</p>
           <p class="Nunito fz-20 text-end">за одного</p>
         </div>
-        <div class="merg p-0 mt-3 mb-0">
-        <div class="Nunito fz-16 linia left">
-          <p class="gray">Залишилося:</p>
-          <p>12 місць</p>
+        <div class="p-0 mt-3 mb-0">
+          <div>
+            <div class="Nunito fz-16 linia left">
+              <p class="gray">Залишилося:</p>
+              <p>15 місць</p>
+            </div>
+            <div>
+              <a href="tour_info.html"><p class="more_btn">Детальніше</p></a>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="cards_tour merg">
+    <div class="card_tour mb-2">
+      <div class="hotel_tour">
+        <img src="img/hotel5.jpg" alt="hotel1" width="300" height="200">
       </div>
-      
+      <div class="info_card">
+        <div>
+          <p class="Ubuntu fz-24 fw-500 mb-0">Tropical Haven ★★★★</p>
+          <p class="Ubuntu fz-16 fw-500 mb-2">Таїланд, Пхукет</p>
+            <div class="d-flex row">
+              <div class="Nunito fz-16 linia align-middle">
+                <p class="gray">Виліт:</p>
+                <p>02.08.2026 з Варшава</p>
+              </div>
+              <div class="Nunito fz-16 linia align-middle"><p class="gray">Ночей:</p>8</div>
+              <div class="Nunito fz-16 linia"><p class="gray">Кімната:</p>Ocean View Suite</div>
+              <div class="Nunito fz-16 linia"><p class="gray">Все включено</p>Так</div>  
+            </div>
+        </div>
+      </div>
+      <div class="price" style="gap: 10%;">
+        <div class="merg p-0 mb-0 row mt-0">
+          <p class="Nunito fz-36 fw-500 yellow text-end">$8560</p>
+          <p class="Nunito fz-20 text-end">за одного</p>
+        </div>
+        <div class="p-0 mt-3 mb-0">
+          <div>
+            <div class="Nunito fz-16 linia left">
+              <p class="gray">Залишилося:</p>
+              <p>1 місць</p>
+            </div>
+            <div>
+              <a href="tour_info.html"><p class="more_btn">Детальніше</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-  </div>
+
+  
+
+
+
+
   <div class="merg align-middle justify-content-center mt-0 ">
     <button class="btn_more"><a href="#"><p class="Nunito fz-20 ">Дивитися більше</p></a></button>
   </div>
