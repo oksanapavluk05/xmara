@@ -1,0 +1,10 @@
+User-agent: *
+# Дозволяє індексацію всього контенту
+Allow: /
+
+# Забороняє індексацію технічних файлів
+Disallow: /img/
+Disallow: /css/
+
+# Посилання на sitemap 
+Sitemap: https://oksanapavluk05.github.io/xmara/sitemap.xml
