@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "wkzmzzssk5");
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TFQ7D2R4T2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -608,43 +615,43 @@
     </footer>
 
 <script>
-document.querySelectorAll('p').forEach(function(el) {
-  if(el.innerText.includes('+380')) {
+    document.querySelectorAll('p').forEach(function(el) {
+    if(el.innerText.includes('+380')) {
+        el.addEventListener('click', function() {
+        gtag('event', 'phone_click', {
+            phone_number: this.innerText
+        });
+        });
+    }
+    });
+
+    document.querySelector('.btn').addEventListener('click', function() {
+    gtag('event', 'cta_click', {
+        button_text: 'Знайти тур'
+    });
+    });
+
+    document.querySelectorAll('.social-link').forEach(function(el) {
     el.addEventListener('click', function() {
-      gtag('event', 'phone_click', {
-        phone_number: this.innerText
-      });
+        gtag('event', 'social_click', {
+        platform: this.dataset.platform
+        });
     });
-  }
-});
-
-document.querySelector('.btn').addEventListener('click', function() {
-  gtag('event', 'cta_click', {
-    button_text: 'Знайти тур'
-  });
-});
-
-document.querySelectorAll('.social-link').forEach(function(el) {
-  el.addEventListener('click', function() {
-    gtag('event', 'social_click', {
-      platform: this.dataset.platform
     });
-  });
-});
 
-document.querySelectorAll('.img_text h1').forEach(function(el) {
-  el.addEventListener('click', function() {
-    gtag('event', 'tour_click', {
-      tour_name: this.innerText
+    document.querySelectorAll('.img_text h1').forEach(function(el) {
+    el.addEventListener('click', function() {
+        gtag('event', 'tour_click', {
+        tour_name: this.innerText
+        });
     });
-  });
-});
+    });
 
-document.querySelector('.order_btn').addEventListener('click', function() {
-  gtag('event', 'cta_consultation', {
-    button_text: 'Отримати консультацію'
-  });
-});
+    document.querySelector('.order_btn').addEventListener('click', function() {
+    gtag('event', 'cta_consultation', {
+        button_text: 'Отримати консультацію'
+    });
+    });
 </script>
 
 
