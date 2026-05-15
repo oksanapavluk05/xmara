@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Бронювання успішне</title>
+</head>
+<body style="font-family:Arial; text-align:center; padding-top:100px;">
+    <h1>Дякуємо за бронювання!</h1>
+    <p>Вашу заявку успішно відправлено.</p>
+    <a href="index.html">Повернутися на головну</a>
+</body>
+</html>
